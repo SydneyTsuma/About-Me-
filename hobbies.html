@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sydney Tsuma - Connect</title>
+    <!-- Load Tailwind CSS from CDN for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for the Inter font */
+        @import url('https://fonts.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light background for the whole page */
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full bg-white shadow-md p-4 z-50 rounded-b-lg">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-2xl font-bold text-blue-600">Sydney Tsuma</h1>
+            <div class="space-x-6">
+                <a href="index.html" class="text-lg font-medium text-gray-700 hover:text-blue-600 transition-colors duration-300">About Me</a>
+                <a href="journey.html" class="text-lg font-medium text-gray-700 hover:text-blue-600 transition-colors duration-300">Journey & Expertise</a>
+                <a href="connect.html" class="text-lg font-medium text-blue-600 transition-colors duration-300">Connect</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page 3: Beyond Work & Connect Content -->
+    <section class="min-h-screen flex items-center justify-center py-20 px-4 bg-gradient-to-r from-purple-50 to-pink-50">
+        <div class="container mx-auto p-8 bg-white rounded-2xl shadow-xl flex flex-col md:flex-row items-center gap-10 max-w-4xl">
+            <!-- My Hobbies Photo -->
+            <div class="flex-shrink-0">
+                <img src="https://placehold.co/200x200/d8b4fe/ffffff?text=My+Hobbies" alt="Hobbies Illustration" class="rounded-full border-4 border-purple-400 shadow-lg w-48 h-48 object-cover">
+                <p class="text-center mt-4 text-gray-600">My Hobbies</p>
+            </div>
+            <!-- Beyond Work & Connect Content -->
+            <div class="text-center md:text-left">
+                <h2 class="text-5xl font-extrabold text-pink-700 mb-6 leading-tight">Beyond Work & Connect</h2>
+
+                <!-- Hobbies -->
+                <div class="mb-8">
+                    <h3 class="text-3xl font-semibold text-pink-600 mb-4 border-b-2 border-pink-300 pb-2">My Interests & Hobbies</h3>
+                    <p class="text-xl text-gray-700 mb-3">While deeply immersed in technology and AI, my passion for <span class="font-medium text-pink-600">World History</span> provides a crucial balance. Delving into the narratives of the past offers unique perspectives on human behavior, societal structures, and the evolution of ideas – all of which subtly inform my approach to building intelligent systems.</p>
+                    <p class="text-xl text-gray-700">Outside of academic pursuits and coding, I also enjoy <span class="font-medium text-pink-600"> Hiking, Photography, Reading fiction</span>, which helps me stay curious and refreshed.</p>
+                </div>
+
+                <!-- Connect -->
+                <div>
+                    <h3 class="text-3xl font-semibold text-pink-600 mb-4 border-b-2 border-pink-300 pb-2">Let's Connect!</h3>
+                    <p class="text-xl text-gray-700 mb-6">I'm always eager to discuss new ideas, collaborate on innovative projects, or simply connect with fellow enthusiasts in AI, technology, and beyond. Feel free to reach out!</p>
+                    <ul class="space-y-4 text-lg">
+                        <li>
+                            <strong class="text-pink-700">Email:</strong> <a href="mailto:sydneytsuma1@gmail.com" class="text-blue-600 hover:underline">sydneytsuma1@gmail.com</a>
+                        </li>
+                        <li>
+                            <strong class="text-pink-700">LinkedIn:</strong> <a href="www.linkedin.com/in/SydneyTsuma" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">www.linkedin.com/in/SydneyTsuma</a>
+                        </li>
+                        <li>
+                            <strong class="text-pink-700">GitHub:</strong> <a href="https://github.com/SydneyTsuma" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">github.com/sydneystsuma</a>
+                        </li>
+                        <li>
+                            <strong class="text-pink-700">Location:</strong> Nairobi, Kenya
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-6 mt-10 rounded-t-lg">
+        <div class="container mx-auto">
+            <p>&copy; <span id="current-year"></span> Sydney Tsuma. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in the footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
